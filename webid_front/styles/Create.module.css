@@ -6,8 +6,7 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
-	border: 2px solid red;
+	padding: 5px;
 }
 
 .container h1 {
@@ -22,7 +21,6 @@
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px;
-	border: 2px solid blue;
 }
 
 .buttonGrid {
@@ -30,7 +28,6 @@
 	height: 310px;
 	padding: 1px;
 	align-items: center;
-	border: 2px solid purple;
 }
 
 .buttonContainer {
@@ -42,7 +39,7 @@
 	color: #042C50;
 	transition:
 		color 0.15s ease;
-	border: 2px solid red;
+
 }
 
 .buttonContainer:hover,
@@ -65,6 +62,13 @@
 	padding: 3px;
 	color: #303030;
 	font-size: 0.7rem;
-	border: 2px solid green;
+
 }
+
+@media (max-width: 600px) {
+	.buttonList {
+	  width: 100%;
+	  flex-direction: column;
+	}
+  }
 
