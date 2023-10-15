@@ -8,7 +8,7 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: 5px;
-	min-height: 70vh;
+	min-height: 90vh;
 }
 
 .container main{
@@ -59,7 +59,12 @@
 
 @media (max-width: 600px) {
 	.grid {
-		width: 80%;
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 360px) {
+	.card p {
+		font-size: 0.8rem;
 	}
 }

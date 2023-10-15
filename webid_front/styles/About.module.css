@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 80vh;
 }
 
 .leftcontainer {
@@ -13,12 +14,12 @@
   }
 
 .title {
-	align-self: center; /* Align the title at the top */
+	align-self: center;
 	text-align: center;
 }
 
 .text {
-	text-align: center; /* Center text horizontally */
+	text-align: center;
 }
 
 .rightcontainer
@@ -27,24 +28,16 @@
 	padding: 1rem;
 }
 
-.spacing1
-{
-	margin: 7rem;
-}
 
-.spacing2
-{
-	margin: 1rem;
-}
-
-.spacing3
-{
-	margin: 8rem;
-}
 
 @media (max-width: 1002px) {
 	.container {
-		width: 100%;
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 360px) {
+	.text {
+		font-size: 0.6rem;
 	}
 }

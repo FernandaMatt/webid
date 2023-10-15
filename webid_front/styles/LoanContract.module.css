@@ -7,7 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
-	min-height: 70vh;
+	min-height: 80vh;
 }
 
 .container h1 {
@@ -102,4 +102,26 @@
 	.questionContainer {
 		width: 80%;
 	}
+}
+
+@media (max-width: 360px) {
+	.questionContainer {
+		width: 250xp;
+		padding: 10px;
+		margin-top: 0x;
+
+	}
+	.arrowbutton {
+		width: 80%;
+		height: 80%;
+	}
+	.answerInput {
+		width: 200px;
+		height: 40px;
+		margin: 5px;
+	}
+	.buttonDisabled {
+		margin: 5px;
+	  }
+
 }
