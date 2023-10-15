@@ -57,7 +57,7 @@ export default function Navbar ()
 				</li>
 				<li>
 					<Link href="/about">
-						About
+						About Us
 					</Link>
 				</li>
 			</ul>)}
@@ -91,7 +91,7 @@ export default function Navbar ()
 				</li>
 				<li>
 					<Link href="/about">
-						About
+						About Us
 					</Link>
 				</li>
           </ul>
