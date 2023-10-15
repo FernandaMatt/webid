@@ -21,7 +21,7 @@ export default function RentConfirmation() {
 					</div>
 					<div className={styles.card} >
 						<p>
-							Your are creating a <span>Rent</span> Contract Type.
+							Your are creating a <span>Rent</span> Contract Type. More details and features are comming soon.
 						</p>
 						<button>Create your Auction!</button>
 
