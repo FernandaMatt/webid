@@ -25,3 +25,7 @@
 .navbar li:hover{
 	border-color: #FA9C07;
 }
+
+.white-icon{
+	filter: brightness(0) invert(1);
+}
