@@ -4,7 +4,7 @@ import styles from '../styles/Footer.module.css';
 export default function Footer () {
 	return (
 		<footer className={styles.footer}>
-			<Image
+			<Image className={styles.logo}
 				priority
 				src="/webid_logos/webid_logo_vertical_azul.01_Prancheta.png"
 				height={222}

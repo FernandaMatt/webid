@@ -5,6 +5,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: sticky;
+	top: 0;
+	margin: 0;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 150px;
 }
 
 .navbar ul {
@@ -29,3 +39,10 @@
 .white-icon{
 	filter: brightness(0) invert(1);
 }
+
+@media (max-width: 1002px) {
+	.navbar ul {
+	  width: 100%;
+	  flex-direction: column;
+	}
+  }

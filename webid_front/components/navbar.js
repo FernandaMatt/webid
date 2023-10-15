@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 import Link from 'next/link';
 import Image from 'next/image';
@@ -24,22 +24,17 @@ export default function Navbar ()
 	return (
 		<nav className={styles.navbar}>
 			<Link href="/">
-			<Image
-				priority
-				src="/webid_logos/webid_logo.01_branco_prancheta.png"
-				height={72}
-				width={219.41}
-				alt="webid_logo.01_branco_prancheta.png"
-				/>
+				<Image className={styles.logo}
+					priority
+					src="/webid_logos/webid_logo.01_branco_prancheta.png"
+					height={72}
+					width={219.41}
+					alt="webid_logo.01_branco_prancheta.png"
+					/>
 			</Link>
 
 			{size.width > 1002 && (
 			<ul>
-				<li>
-				<Link href="/">
-						Home
-					</Link>
-				</li>
 				<li>
 					<Link href="/auctions">
 						Auctions
@@ -70,11 +65,6 @@ export default function Navbar ()
 				</div>
 				<ul className={`${styles.link_items}`}>
 				<li>
-				<Link href="/">
-						Home
-					</Link>
-				</li>
-				<li>
 					<Link href="/auctions">
 						Auctions
 					</Link>
@@ -94,14 +84,14 @@ export default function Navbar ()
 						About
 					</Link>
 				</li>
-          </ul>
+			</ul>
 			</div>
 			)}
-			
+
 			{/*Renderiza o ícone de menu apenas em telas menores que 1002px */}
 			{!menuOpen && size.width <= 1002 && (
 				<div className={styles.menuIcon} onClick={toggleMenu}>
-          			<Image src={menuIcon} alt="Menu Icon" width={50} height={2} className="white-icon"/>
+					<Image src={menuIcon} alt="Menu Icon" width={50} height={2} className="white-icon"/>
 				</div>
 			)}
 		</nav>

@@ -18,7 +18,7 @@ export default function Home() {
 					</p>
 				</div>
 				<div className={styles.item-2}>
-					<Image
+					<Image className={styles.gif}
 						priority
 						src="/webid_logos/logo_gif.01.gif"
 						height={500}

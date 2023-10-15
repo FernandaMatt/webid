@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'Righteous';
+	src: url('/fonts/Inter/Righteous-Regular.ttf') format('ttf');
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border: 2px solid red;
+}
+
+.container h1 {
+	text-align: center;
+	font-family:
+		Righteous,
+		Inter;
+}
+
+.buttonList {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	border: 2px solid blue;
+}
+
+.buttonGrid {
+	width: 160px;
+	height: 310px;
+	padding: 1px;
+	align-items: center;
+	border: 2px solid purple;
+}
+
+.buttonContainer {
+	width: 150px;
+	height: 200px;
+	border-radius: 20px;
+	text-align: center;
+	background:#ECF0F5;
+	color: #042C50;
+	transition:
+		color 0.15s ease;
+	border: 2px solid red;
+}
+
+.buttonContainer:hover,
+.buttonContainer:focus,
+.buttonContainer:active {
+	background:#042C50;
+	color: #fff;
+}
+
+.buttonContainer img {
+	width: 150px;
+}
+
+.buttonContainer img:hover {
+	filter: brightness(0) invert(1);
+}
+
+.buttomDescription {
+	text-align: left;
+	padding: 3px;
+	color: #303030;
+	font-size: 0.7rem;
+	border: 2px solid green;
+}
+

@@ -1,15 +1,15 @@
 import Head from 'next/head';
 
-export default function About() {
+export default function SaleContract() {
 	return (
 		<div>
 			<Head>
-				<title>About</title>
+				<title>Sale Contract</title>
 				<link rel="icon" href="/webid_logos/webid_favicon.ico" />
 			</Head>
 
 			<main>
-				<h1>About Page</h1>
+				<h1>Sale Contract</h1>
 			</main>
 		</div>
 	);
