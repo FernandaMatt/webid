@@ -3,7 +3,7 @@ import a from "next/link";
 import Image from "next/image";
 import styles from '../styles/AuctionCards.module.css'
 
-export default function AuctionCard() {
+export default function AuctionCard({source, title, description}) {
 
 	const [time, setTime] = useState({ hours: 0, minutes: 4, seconds: 42 });
 	const [value, setValue] = useState(0);
@@ -40,16 +40,19 @@ export default function AuctionCard() {
 	const highestBid = `${String(value)}`;
 	console.log("highestBid" + highestBid);
 	return (
-	  <div className={styles.card}>
-		<Image src="/apto.jpg" width={558} height={423} />
-		<div className={styles.card_content}>
-		  <h2>Copacabana Apartment</h2>
-		  <p>
-		  Charming, sunlit space with beach views. Comfy furnishings, well-equipped kitchen. Tranquil bedroom with en-suite. Private balcony. Ideal city retreat.
-		  </p>
+		<div className={styles.card}>
+			<Image src={source} width={558} height={423} />
+			<div className={styles.card_content}>
+			<h2>{title}</h2>
+			<p>
+				{description}
+			</p>
+			</div>
+			<button>{formattedTime}</button>
+			<button>{value}</button>
 		</div>
-		<button>{formattedTime}</button>
-		<button>{value}</button>
-	  </div>
 	);
-  }
+}
+
+
+

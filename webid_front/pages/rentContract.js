@@ -1,15 +1,25 @@
 import Head from 'next/head';
 
+import RentForm from '../components/rentForm';
+
+import styles from '../styles/LoanContract.module.css';
+
 export default function RentContract() {
 	return (
-		<div>
+		<div className={styles.container}>
 			<Head>
 				<title>Rent Contract</title>
 				<link rel="icon" href="/webid_logos/webid_favicon.ico" />
 			</Head>
 
 			<main>
-				<h1>Rent Contract</h1>
+				<div>
+					<h1>You are creating a Rent Contract</h1>
+					<p>Read the instructions carefully.</p>
+				</div>
+				<div className={styles.form}>
+					<RentForm />
+				</div>
 			</main>
 		</div>
 	);

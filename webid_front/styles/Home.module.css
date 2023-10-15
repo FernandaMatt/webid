@@ -23,6 +23,20 @@
 	min-width: 150px;
 }
 
+.auction {
+	text-align: center;
+	font-family:
+		Righteous,
+		Inter;
+}
+
+.grid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
 .item-1 {
   flex-grow: 2;
 }
@@ -47,7 +61,7 @@
 }
 
 @media (max-width: 600px) {
-  .container main  {
+  .container main, .grid  {
     width: 100%;
     flex-direction: column;
   }
@@ -55,5 +69,4 @@
     display: none;
   }
 }
-
 

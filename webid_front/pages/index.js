@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
+import AuctionCard from '../components/auctionCards';
+
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -28,7 +30,14 @@ export default function Home() {
 				</div>
 			</main>
 			<div>
-				<h1>Auctions</h1>
+			<div>
+				<h1 className={styles.auction}>Auctions </h1>
+				</div>
+				<div className={styles.grid}>
+					<AuctionCard source="/apto.jpg" title="Copacabana Apartment" description="Charming, sunlit space with beach views. Comfy furnishings, well-equipped kitchen. Tranquil bedroom with en-suite. Private balcony. Ideal city retreat." />
+					<AuctionCard source="/bmw.jpg" title="BMW 2022 - Blue" description="Sleek blue finish, 503 HP, 3.0L twin-turbo. Luxurious leather interior, tech-packed. Low mileage, meticulously maintained. Own the thrill. Bid now!" />
+					<AuctionCard source="/webid.jpg" title="Webid - T-shirt" description="The million-dollars shirt" />
+				</div>
 			</div>
 
 		</div>
