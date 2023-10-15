@@ -1,0 +1,27 @@
+.navbar {
+	background-color: #042C50;
+	color: #fff;
+	padding: 1rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+}
+
+.navbar li {
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	text-decoration: none;
+	border-bottom: 2px solid;
+	border-color: transparent;
+	transition: 0.3s;
+}
+
+.navbar li:hover{
+	border-color: #FA9C07;
+}

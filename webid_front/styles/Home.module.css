@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main {
+  padding: 0 4rem;
+  min-height: 80vh;
+  width: 100%;
+  background-color: #042C50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-1 {
+  flex-grow: 2;
+}
+
+.item-2 {
+  flex-grow: 1;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.titlecolor {
+  color: #FA9C07;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
