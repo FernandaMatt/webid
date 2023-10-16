@@ -1,0 +1,70 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 80vh;
+	padding: 5px;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+
+.buttonList {
+	margin-top:80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+.buttonGrid {
+	width: 160px;
+	height: 310px;
+	padding: 1px;
+	align-items: center;
+}
+
+.buttonContainer {
+	width: 150px;
+	height: 200px;
+	border-radius: 20px;
+	text-align: center;
+	background:#ECF0F5;
+	color: #042C50;
+	transition:
+		color 0.15s ease;
+
+}
+
+.buttonContainer:hover,
+.buttonContainer:focus,
+.buttonContainer:active {
+	background:#042C50;
+	color: #fff;
+}
+
+.buttonContainer img {
+	width: 150px;
+}
+
+.buttonContainer img:hover {
+	filter: brightness(0) invert(1);
+}
+
+.buttomDescription {
+	text-align: left;
+	padding: 3px;
+	color: #303030;
+	font-size: 0.7rem;
+
+}
+
+@media (max-width: 600px) {
+	.buttonList {
+	  margin-top: 0px;
+	  width: 100%;
+	  flex-direction: column;
+	}
+  }
+
