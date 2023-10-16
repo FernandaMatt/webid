@@ -1,22 +1,16 @@
-@font-face {
-	font-family: 'Righteous';
-	src: url('/fonts/Inter/Righteous-Regular.ttf') format('ttf');
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
+	min-height: 80vh;
 }
 
 .container h1 {
 	text-align: center;
-	font-family:
-		Righteous,
-		Inter;
 }
 
 .grid {
+	margin-top:80px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -25,6 +19,7 @@
 
 @media (max-width: 700px) {
 	.grid {
+		margin-top: 0px;
 		width: 100%;
 		flex-direction: column;
 	}

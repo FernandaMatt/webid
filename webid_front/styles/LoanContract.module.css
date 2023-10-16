@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'Righteous';
-	src: url('/fonts/Inter/Righteous-Regular.ttf') format('ttf');
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -12,22 +7,17 @@
 
 .container h1 {
 	text-align: center;
-	font-family:
-		Righteous,
-		Inter;
 	margin-bottom: 0;
 }
 
 .container p {
 	text-align: center;
-	font-family:
-		Righteous,
-		Inter;
 	margin-top: 1.5px;
 	font-size: 0.8rem;
 }
 
 .form {
+	margin-top:80px;
 	display: flex;
 	justify-content: space-around;
 	padding: 10px;
